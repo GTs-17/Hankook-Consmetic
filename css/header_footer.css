@@ -1,0 +1,36 @@
+@import url("root.css");
+
+.head_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head_menu ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.head_menu ul > li {
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+
+.head_menu ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: var(--header_footer_font_family);
+  color: var(--header_font_color);
+}
+
+.head_card{
+    position: relative;
+}
+
+.head_card ul{
+  display: flex;
+}
+
+
+
