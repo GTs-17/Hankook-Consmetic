@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 3rem;
 }
 
 .head_menu ul {
@@ -28,9 +29,108 @@
     position: relative;
 }
 
-.head_card ul{
-  display: flex;
+.header_cart button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--main_color);
+  border: none;
+  border-radius: 30px;
+  color: var(--header_background);
+  margin-right: 2em;
+  margin-left: 1em;
+  cursor: pointer;
 }
+
+
+footer{
+  background: #F4ECE9;
+  height: 100%;
+  width: 100vw;
+  padding-top: 2rem;
+}
+
+.footer-col{
+  width: 25%;
+  margin: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.social-links ul > li{
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.footer_top_section {
+  display: grid;
+  grid-template-columns: 20% 25% 30% 25% ;
+}
+
+.footer_logo{
+  position: relative;
+}
+
+.footer_logo > picture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* aspect-ratio: initial;
+    width: 200; */
+}
+
+.footer_bottom_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--footer_padding);
+  color: var(--footer_p_color);
+}
+
+.footer_bottom_section {
+  text-align: center;
+}
+
+.input_text {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 3rem;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_top_section {
+    padding-left: 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "footer_logo"
+      "about_us"
+      "comment"
+      "join_us";
+  }
+
+
+
+}
+
+
+
 
 
 

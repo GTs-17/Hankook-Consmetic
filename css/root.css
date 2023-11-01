@@ -1,7 +1,6 @@
-  
-  
- 
-  :root {
+
+
+:root {
 
 
     
@@ -10,5 +9,15 @@
   --header_footer_font_family: "PT Sans", sans-serif;
   --header_font_color: #000000;
 
+
+    /* footer */
+    --footer_background: #202020;
+    --footer_font_color: #fff;
+    --footer_font_size: 1rem;
+    --footer_title_size: 0.875rem;
+    --footer_p_color: #aeaeae;
+    --border_radius: 0.5rem;
+    --font_margin_top: 2rem;
+    --footer_padding: 1rem 0 1rem 0;
 
   }
