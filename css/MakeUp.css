@@ -1,0 +1,37 @@
+
+
+.Shuuderee img{
+    width: 25rem;
+    height: 22rem;
+    margin-right: auto;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-top: 2rem ;
+}
+.makeupnuur img{
+    width: 20rem;
+    height: 17rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-right: 6rem;
+}
+.Exam-ti{
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   display: flex;
+}
+.mm {
+   margin-top: 5rem;
+   font-family: 'Julius Sans One';
+   color: aqua;
+  
+}
+.pp{
+    margin-left: 3rem;
+    font-family: 'Julius Sans One', sans-serif;
+}
+a{
+    margin-left: 5rem;
+    margin-top:10rem ;
+}
