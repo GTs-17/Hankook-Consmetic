@@ -35,3 +35,19 @@ a{
     margin-left: 5rem;
     margin-top:10rem ;
 }
+.turul{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background: white;
+    border-radius: 0.5rem; 
+    width: 12rem;
+    height: 2rem;
+    
+}
+.tovch{
+    margin-left: 5rem;
+    background: white;
+    border-radius: 0.5rem; 
+    width: 5rem;
+    height: 2rem;
+}
