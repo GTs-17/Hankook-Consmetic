@@ -1,22 +1,33 @@
 @import url("root.css");
 
-.head_menu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 3rem;
+header {
+  width: 100%;
+  background-color: var(--header_background);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.head_menu ul {
+.head_menu {
   display: flex;
   justify-content: space-between;
-  gap: 2.5rem;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
 }
 
-.head_menu ul > li {
-  list-style: none;
-  margin: 0 1rem 0 0;
-}
+.head_menu ul 
+  {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+.head_menu ul > li 
+  {
+    margin: 0 1rem 0 0;
+    list-style: none;
+  }
 
 .head_menu ul li a {
   text-decoration: none;
@@ -25,21 +36,30 @@
   color: var(--header_font_color);
 }
 
-.head_card{
-    position: relative;
+.head_card a{
+  position: relative;
 }
 
-.header_cart button {
-  padding: 0.75rem 1.25rem;
-  background-color: var(--main_color);
-  border: none;
-  border-radius: 30px;
-  color: var(--header_background);
-  margin-right: 2em;
-  margin-left: 1em;
-  cursor: pointer;
+.logo img {
+  width: 3rem;
+  height: auto;
 }
 
+.margin-top1{
+  margin-top: 0.5rem;
+}
+
+.margin-top{
+  margin-top: 1rem;
+}
+
+.margin-left1{
+  margin-left: 0.5rem;
+}
+
+.margin-right1{
+  margin-right: 0.5rem;
+}
 
 footer{
   background: #F4ECE9;
@@ -124,10 +144,8 @@ footer{
       "comment"
       "join_us";
   }
-
-
-
 }
+
 
 
 

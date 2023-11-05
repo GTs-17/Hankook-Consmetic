@@ -1,11 +1,11 @@
 
 
 :root {
-
+  --main_color: #ffb5b5;
 
     
   /*header part */
-  --header_background: #ffffff;
+  --header_background: #FFE7E7;
   --header_footer_font_family: "PT Sans", sans-serif;
   --header_font_color: #000000;
 
