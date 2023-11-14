@@ -12,7 +12,7 @@
     background-size: cover;
 }
 
-.intro-home button{
+.intro-home .button{
     width: 12rem;
     height: 4rem;
     border-radius: 0.5rem;
@@ -21,6 +21,39 @@
     margin-right: 15rem;
     margin-top: 25rem;
 }
+
+.intro-home .button:hover {
+  background-color: #FF8080; /* Change the background color on hover */
+}
+
+.intro-home .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+
+.intro-home .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.intro-home .button:hover span {
+  padding-right: 25px;
+}
+
+.intro-home .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
 
 .contact_bt {
     width: 100%;

@@ -4,6 +4,7 @@ header {
   width: 100%;
   background-color: var(--header_background);
   display: flex;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -63,9 +64,8 @@ header {
 
 footer{
   background: #F4ECE9;
-  height: 100%;
-  width: 100vw;
-  padding-top: 2rem;
+  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 .footer-col{
@@ -116,22 +116,22 @@ footer{
 }
 
 .footer_bottom_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--footer_padding);
-  color: var(--footer_p_color);
+  padding: 0.5em 8em 0.5em 8em;
 }
 
-.footer_bottom_section {
-  text-align: center;
-}
+
 
 .input_text {
   display: flex;
   flex-wrap: nowrap;
   margin-left: 3rem;
   gap: 1rem;
+}
+
+.footer-line {
+  padding: 0;
+  margin: 0;
+  border-top: 0.2px solid var(--line-color);
 }
 
 @media only screen and (max-width: 768px) {
