@@ -1,3 +1,5 @@
+@import url("root.css");
+
 .body{
     background-color: red;
 }
@@ -9,3 +11,106 @@
     background-position: center;
     background-size: cover;
 }
+
+.intro-home .button{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #FFB5B5;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 25rem;
+}
+
+.intro-home .button:hover {
+  background-color: #FF8080; /* Change the background color on hover */
+}
+
+.intro-home .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+
+.intro-home .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.intro-home .button:hover span {
+  padding-right: 25px;
+}
+
+.intro-home .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+.contact_bt {
+    width: 100%;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 25rem;
+}
+
+.contact_bt a {
+    width: 180px;
+    float: right;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    background: #FFB5B5;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.contact_bt a:hover {
+    color: #000;
+    background-color: #FF8080;
+}
+
+.aboutUs{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .aboutUs > .Text {
+    width: 30rem;
+  }
+
+  .aboutUs > .Text > .Texta{
+    color: #95770E;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .Text button{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #FFB5B5;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    margin-left:5rem ;
+  }
+
+  
+
+  
+  
+
+  
+  
