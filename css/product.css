@@ -62,6 +62,24 @@
   justify-content: space-between;
 }
 
+.dood{
+  background-color: #FFE7E7;
+}
+.dood h3{
+color: black;
+font-size: 15px;
+font-family: Jost;
+word-wrap: break-word
+}
+.dood p{
+  color: rgba(0, 0, 0, 0.70);
+font-size: 12px;
+font-family: Jost;
+font-weight: 400;
+word-wrap: break-word
+}
+
+
 
 
 
