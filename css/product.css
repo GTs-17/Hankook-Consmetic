@@ -62,6 +62,32 @@
   justify-content: space-between;
 }
 
+
+
+
+
+.products-info {
+    text-align: center;
+    padding: 5px; /* Reduced padding */
+    border: 1px solid #ccc;
+    margin-top: 5px; /* Reduced top margin */
+}
+
+.products-info h3 {
+    color: #333;
+    margin-bottom: 5px; /* Added a bottom margin to the heading */
+}
+
+.products-info p {
+    margin: 3px 0; /* Reduced vertical margin for paragraphs */
+}
+
+.products-info s {
+    color: #999;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .product_page {
     grid-template-columns: repeat(3, 2fr);
