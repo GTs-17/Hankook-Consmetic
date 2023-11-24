@@ -51,3 +51,18 @@
     width: 5rem;
     height: 2rem;
 }
+.content{
+    width: 18rem;
+  height: 18rem;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+}
