@@ -1,0 +1,57 @@
+.skin_11 img{
+    width: 25rem;
+    height: 22rem;
+    margin-right: auto;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-top: 2rem ;
+}
+.skin_2 img{
+    width: 20rem;
+    height: 17rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-right: 6rem;
+}
+.skin_1 {
+    
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   display: flex;
+}
+
+.s1{
+    
+   margin-top: 5rem;
+   font-family: 'Julius Sans One';
+   color: aqua;
+}
+.s2{
+    
+    margin-left: 3rem;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.a{
+    margin-left: 5rem;
+    margin-top:10rem ;
+}
+
+.turul{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background: white;
+    border-radius: 0.5rem; 
+    width: 12rem;
+    height: 2rem;
+    
+}
+
+.tovch{
+    margin-left: 5rem;
+    background: white;
+    border-radius: 0.5rem; 
+    width: 5rem;
+    height: 2rem;
+}
