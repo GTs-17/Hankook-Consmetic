@@ -18,7 +18,7 @@ class header extends HTMLElement {
                 </ul> 
             </nav>
             <section class="head_card margin-top margin-right1">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            <a href="login.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
