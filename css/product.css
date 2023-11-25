@@ -62,6 +62,36 @@
   justify-content: space-between;
 }
 
+.dood{
+  background-color: #FFE7E7;
+  border-radius: 0.5rem; 
+  position: relative;
+}
+.dood h3{
+color: black;
+font-size: 15px;
+font-family: Jost;
+word-wrap: break-word;
+width: 134px;
+height: 24px;
+}
+.dood p{
+  color: rgba(0, 0, 0, 0.70);
+font-size: 12px;
+font-family: Jost;
+font-weight: 400;
+word-wrap: break-word;
+width: 185px;
+height: 25px;
+}
+.dood a{
+width: 123px;
+height: 33px;
+position: absolute;
+top: 0;
+right: 0;
+}
+
 
 
 
