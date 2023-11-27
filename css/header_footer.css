@@ -37,6 +37,10 @@ header {
   color: var(--header_font_color);
 }
 
+.head_menu a:hover {
+    color: #ff6600; 
+}
+
 .head_card a{
   position: relative;
 }
