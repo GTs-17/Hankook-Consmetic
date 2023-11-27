@@ -29,7 +29,8 @@ body{
 .form-box input:focus{
     box-shadow: 0px 0px 1px 1px  #fec9c9;
 }
-.form-box .from-btn a{
+
+.from-btn a{
     width: 100%;
     color: black;
     font-size: 16px;
@@ -39,7 +40,7 @@ body{
     font-weight: 600;
     display: inline-block;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid black;    
 }
 .form-box .from-btn a:hover{
     background-color:#fec9c9;
@@ -50,5 +51,5 @@ body{
     margin-top: 5px;
     margin-bottom: 20px;
     display: block;
-    text-align: right;
+    text-align: center;
 }
