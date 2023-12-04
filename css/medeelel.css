@@ -1,11 +1,12 @@
-body{
+.content{
     font-family: sans-serif;
     background-color: white;
+    margin-bottom: 100px;
+    display: contents;
 }
 h3{
     text-align: left;
-    font-size: 15px;
-    text-decoration: none;
+    font-size: 100%;
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
@@ -15,23 +16,25 @@ h3{
     width: 250px;
     height: 300px;
     background-color: #FFE7E7;
+    box-sizing: border-box;
+    border: 1px solid #FFE7E7;
 }
 .product img{
     width: 100%;
     height: 200px;
 }
 p{
-    font-size: 15px;
+    font-size: 70%;
     padding-left: 10px;
 }
 section{
-    display: flex;
-    flex-wrap: wrap;
-}
-.body{
     justify-content: center;
-    align-items: center;
+    display: flex;
 }
-h1{
-    font-size: 80px;
+.h1{
+    padding: 30px;
+    font-size: 70px;
+}
+main{
+    margin-bottom: 100px;
 }
