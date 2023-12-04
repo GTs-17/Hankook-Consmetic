@@ -4,22 +4,24 @@ body{
 }
 h3{
     text-align: left;
-    font-size: 10px;
+    font-size: 15px;
     text-decoration: none;
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
 }
 .product{
+    margin: 10px;
     width: 250px;
     height: 300px;
+    background-color: #FFE7E7;
 }
 .product img{
     width: 100%;
     height: 200px;
 }
 p{
-    font-size: 5px;
+    font-size: 15px;
 }
 section{
     display: flex;
