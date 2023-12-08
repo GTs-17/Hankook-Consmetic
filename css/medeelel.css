@@ -11,7 +11,7 @@ h3{
     padding-top: 10px;
     padding-left: 10px;
 }
-.product{
+.news{
     margin: 10px;
     width: 250px;
     height: 300px;
@@ -19,7 +19,7 @@ h3{
     box-sizing: border-box;
     border: 1px solid #FFE7E7;
 }
-.product img{
+.news img{
     width: 100%;
     height: 200px;
 }
