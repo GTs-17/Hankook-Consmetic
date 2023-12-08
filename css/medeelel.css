@@ -38,3 +38,27 @@ section{
 main{
     margin-bottom: 100px;
 }
+.search-box{
+    height: 100%;
+    display: flex;
+    cursor:pointer;
+    background-color:white;
+    border-radius: 30px;
+    align-items: center;
+
+}
+.search-box:hover input{
+    width:100%;
+}
+.search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.search-box a .fa{
+    color: #FFE7E7;
+    font-size: 18px;
+}
