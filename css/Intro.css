@@ -1,7 +1,13 @@
 @import url("root.css");
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .body{
-    background-color: red;
+    width: 100%;
 }
 
 .intro-home{
@@ -55,12 +61,12 @@
 
 
 
-.contact_bt {
-    width: 100%;
-    float: right;
-    margin-right: 15rem;
-    margin-top: 25rem;
-}
+  .contact_bt {
+      width: 100%;
+      float: right;
+      margin-right: 15rem;
+      margin-top: 25rem;
+  }
 
 .contact_bt a {
     width: 180px;
@@ -78,24 +84,19 @@
     background-color: #FF8080;
 }
 
-.aboutUs{
+.aboutUs_content{
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
-  .aboutUs > .Text {
+  .Text {
     width: 30rem;
   }
 
-  .aboutUs > .Text > .Texta{
-    color: #95770E;
-    font-family: Nunito;
-    font-size: 1rem;
-    font-weight: 400;
-  }
+
 
   .Text button{
     width: 20rem;

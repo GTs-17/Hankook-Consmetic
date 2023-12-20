@@ -1,15 +1,29 @@
-.top{
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;}
-h1.top{
-    width: 330px;
-height: 125px;
-flex-shrink: 0;
-color: #000;
+@import url("root.css");
 
-text-align: center;
-font-family: Playfair Display;
-font-size: 46px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+.About-video {
+    text-align: center;
+  }
+
+
+  body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  
+.red_line {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--main_color);
+  margin: 1rem 0;
+}
+
+
+
+

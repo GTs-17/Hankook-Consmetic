@@ -1,5 +1,15 @@
 @import url("root.css");
 
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+}
+
 header {
   width: 100%;
   background-color: var(--header_background);

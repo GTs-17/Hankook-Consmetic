@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Гарчиг1",
+    "price": 135000,
+    "img": "image/Sale/sale1.png",
+    "info": "Nice Profdughdfghfdghkfdghkfdghf k hsrukdgfdjkhfhe h hhfgh"
+  },
+  {
+    "id": 2,
+    "title": "Гарчиг2",
+    "price": 36000,
+    "img": "image/Sale/sale2.png",
+    "info": "йөй"
+  },
+  {
+    "id": 3,
+    "title": "Гарчиг3",
+    "price": 36000,
+    "img": "image/Sale/sale3.png",
+    "info": "dsfhyuidyuhgdfygyfdgiud"
+  },
+  {
+    "id": 4,
+    "title": "Гарчиг4",
+    "price": 36000,
+    "img": "image/Sale/sale4.png",
+    "info": "dsffgdsgdsf gdsg s gsddsfhyuidyuhgdfygyfdgiud"
+  },
+  {
+    "id": 5,
+    "title": "Гарчиг5",
+    "price": 36000,
+    "img": "image/Sale/sale4.png",
+    "info": "dsffgdsgdsf gdsg s gsddsfhyuidyuhgdfygyfdgiud"
+  }
+]

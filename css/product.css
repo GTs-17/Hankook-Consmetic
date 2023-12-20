@@ -23,13 +23,12 @@
   border-radius: 0.625rem;
 }
 
-.Products{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
-  gap: 1.5rem;
+.Products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 3rem;
-  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
 .Products > article{
@@ -59,7 +58,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .dood{
@@ -117,12 +116,29 @@ right: 0;
 }
 
 
+/*     Product    */
+#products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+}
+
+
+.img-size {
+  width: 100px; /* Set the width as desired */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
 
 @media only screen and (max-width: 768px) {
   .product_page {
     grid-template-columns: repeat(3, 2fr);
   }
-  .Products {
+  .products {
     margin-left: 0rem;
   }
 }
@@ -148,3 +164,96 @@ right: 0;
   }
 }
 
+
+
+.shop_card{
+  width: 300px;
+  height: 370px;
+  margin: 70px 20px;
+  border-radius: 25px;
+}
+
+.card-title{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-price{
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.card-price{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+    
+.card-img-room{
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+
+.card-detail{
+  height: 20%;
+  text-align: center;
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+}
+.card-btn{
+  display: block;
+  margin: auto;
+  padding: 5px 5px;
+}
+
+
+
+.cart-items{
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  margin-left: 1px;
+}
+
+
+.cart-title{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-img{
+  height: 100%;
+  width: 10%;
+  text-align: center;
+}
+
+.cart-img img{
+  width: 100%;
+  height: 100%;
+}
+.cart-price{
+  height: 100%;
+  width: 25%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
