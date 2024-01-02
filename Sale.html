@@ -13,26 +13,24 @@
 <body>
     <header>
         <nav class="head_menu">
-        <a href="nuur.html">
-            <picture class="logo margin-left1 margin-top1">
-                <img src="image/introduction/MenuLogo.jpg" alt="MenuLogo" width="100px" height="94px">
-            </picture>
-        </a>  
-            <ul>
-                <li><a href="Home.html">Hankook</a></li>
-                <li><a href="Skin_care.html">Арьс арчилгаа</a></li>
-                <li><a href="MakeUp.html">MakeUp</a></li>
-                <li><a href="Sale.html">Хямдрал</a></li>
-                <li><a href="#">Багц</a></li>
-            </ul> 
-        </nav>
-        <section class="head_card margin-top margin-right1">
+            <a href="nuur.html">
+                <picture class="logo margin-left1 margin-top1">
+                    <img src="image/introduction/MenuLogo.jpg" alt="MenuLogo" width="100px" height="94px">
+                </picture>
+            </a>  
+                <ul>
+                    <li><a href="Home.html">Hankook</a></li>
+                    <li><a href="Skin_care.html">Арьс арчилгаа</a></li>
+                    <li><a href="MakeUp.html">MakeUp</a></li>
+                    <li><a href="#" onclick="show_shop()">Хямдрал</a></li>
+                </ul> 
+            </nav>
+            <section class="head_card margin-top margin-right1">
             <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
             <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-        </section>
-        <top-header></top-header>
+            <a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <i class="fa fa-shopping-cart" onclick="show_cart()"><p id="count">0</p></i>
+            </section>
     </header>
     <main>
         <section class="Sale-Top">
@@ -60,62 +58,29 @@
 
 
 
-            <section class="Products product_page">
-                <article class="myproduct" data-name="">
-                    <a href="#">
-                        <picture>
-                            <img src="image/Sale/sale1.png" alt="ampoule">
-                        </picture>
-                    </a>
-                    <article class="products-info">
-                        <h3>Гарчиг</h3>
-                        <p>Тайлбар орж ирнэ ...</p>
-                        <p>150,000₮</p>
-                        <s>135,000</s>
-                    </article>
-                </article>
+        <section id="shop_products"></section>
 
-                <article class="myproduct" data-name="">
-                    <a href="#">
-                        <picture>
-                            <img src="image/Sale/sale2.png" alt="ampoule">
-                        </picture>
-                    </a>
-                    <h3>Гарчиг</h3>
-                    <p>Тайлбар орж ирнэ ...</p>
-                    <p>36,000₮</p>
-                    <s>45,000</s>
-                </article>
+        <section id="cart">
+        </section>
 
-                <article class="myproduct" data-name="">
-                    <a href="#">
-                        <picture>
-                            <img src="image/Sale/sale3.png" alt="ampoule">
-                        </picture>
-                    </a>
-                    <h3>Гарчиг</h3>
-                    <p>Тайлбар орж ирнэ ...</p>
-                    <p>36,000₮</p>
-                    <s>45,000</s>
-                </article>
+          <!-- Display products -->
+  <div id="product-list">
+    <!-- Use JavaScript to populate this section -->
+  </div>
 
-                <article class="myproduct" data-name="">
-                    <a href="#">
-                        <picture>
-                            <img src="image/Sale/sale4.png" alt="ampoule">
-                        </picture>
-                    </a>
-                    <h3>Гарчиг</h3>
-                    <p>Тайлбар орж ирнэ ...</p>
-                    <p>36,000₮</p>
-                    <s>45,000</s>
-                </article>
-            </section>
+  <!-- Display product details -->
+  <div id="product-details">
+    <!-- Product details will be displayed here -->
+  </div>
+
+    
+       
     </main>
 <footer>
     <main-footer></main-footer>
 </footer>
     <script src="js/header-footer.js"></script>
+    <script src="web-component/cart.js"></script>
    
 
 

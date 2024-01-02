@@ -14,13 +14,13 @@ class header extends HTMLElement {
                     <li><a href="Home.html">Hankook</a></li>
                     <li><a href="Skin_care.html">Арьс арчилгаа</a></li>
                     <li><a href="MakeUp.html">MakeUp</a></li>
-                    <li><a href="Sale.html">Хямдрал</a></li>
+                    <li><a href="sale.html" onclick="show_shop()">Хямдрал</a></li>
                 </ul> 
             </nav>
             <section class="head_card margin-top margin-right1">
-            <a href="login.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
             </section>
             `;

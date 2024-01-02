@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+    <script src="js/header-footer.js"></script>
+    <script src="web-component/cart.js"></script>
     <title>Hankook Cosmetic</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
-    <header class="">
+
+    <header>
+        <top-header></top-header>
+        
+    <!-- <header class="">
         <nav class="head_menu">
             <ul>
                 <li><a href="Home.html">Hankook</a></li>
@@ -29,7 +36,8 @@
             <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-        </section>
+        </section> -->
+
     </header>
     <main>
             <!--NewProduct-->
@@ -38,53 +46,53 @@
                 </article>
             </section>
 
-            <section>
+            <section class="Products product_page">
                 <article class="myproduct" data-name="">
                     <a href="#">
                         <picture>
-                            <img src="image/product_image/New1.png" alt="ampoule">
+                            <img src="image/HomePage_image/New1.jpg" alt="ampoule">
                         </picture>
                     </a>
                     <p>NIghtingale Cepa Cica</p>
                     <h3>Өндөр чийгшүүлэгчтэй ampoule</h3>
                     <p>78,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
+                    
                 </article>
 
                 <article class="myproduct" data-name="">
                     <a href="#">
                         <picture>
-                            <img src="image/product_image/New2.png" alt="ampoule">
+                            <img src="image/HomePage_image/New2.png" alt="ampoule">
                         </picture>
                     </a>
                     <p>Nightingale Glossy Sun</p>
                     <strong>Өндөр хамгаалалттай нарны тос</strong>
                     <p>78,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
+
                 </article>
 
                 <article class="myproduct" data-name="">
                     <a href="#">
                         <picture>
-                            <img src="image/product_image/New3.png" alt="ampoule">
+                            <img src="image/HomePage_image/New3.png" alt="ampoule">
                         </picture>
                     </a>
                     <p>Ph.hubby Sun scream</p>
                     <strong>Чийгшүүлэгчтэй нарны тос</strong>
                     <p>78,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
+
                 </article>
 
                 <article class="myproduct" data-name="">
                     <a href="#">
                         <picture>
-                            <img src="image/product_image/New4.png" alt="ampoule">
+                            <img src="image/HomePage_image/New4.png" alt="ampoule">
                         </picture>
                     </a>
                     <p>Epfora Treatment Foundation</p>
                     <strong>Чийглэг фоундэшн</strong>
                     <p>78,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
+
                 </article>
             </section>
 
@@ -102,69 +110,14 @@
         </main>
 
             <footer>
-                <section class="row footer_top_section" >
-                    <section class="footer_logo ">
-                        <a><picture>
-                            <img src="image/HomePage_image/logo.jpg" alt="HankookLogo" width="70%">
-                        </picture>
-                        </a>
-                    </section>
-
-                    <section class="footer-col">
-                        <article>
-                            <h4>Companies</h4>
-                            <ul>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">our services</a></li>
-                                <li><a href="#">privacy policy</a></li>
-                            </ul>
-                        </article>
-                    </section>
-
-                    <section class="footer-col input_text">
-                        <h4>Санал хүсэлт</h4>
-                        <form>
-                            <section>
-                                <label for="message">Мессеж</label>
-                                <textarea name="message" id="message" class="texting"></textarea>
-                                <div class="button">
-                                    <input type="submit" value="Илгээх">
-                                </div>
-                            </section>
-                        </form>
-                    </section>
-    
-
-                    <section>
-                    <article class="footer-col">
-                    <address class="social-links">
-                        <h4>Бидэнтэй нэгдэх</h4>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>                 
-                    </address>
-                    </article>
-                    </section>
-
-                
-               
-            </section>
-
-            <section class="footer_bottom_section">
-                <p>
-                    © 2023 GTs Chimegee Orgio ХХК. Зохиогчийн эрх хуулиар хамгаалагдсан Developed by <a
-                        href="#">Hankook</a>
-                </p>
-    
-            </section>
-    
+                <main-footer></main-footer>
             </footer>
 
 
-            
+
+        
 
 
 
-    
 </body>
 </html>
