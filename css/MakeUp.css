@@ -55,7 +55,7 @@
     width: 5rem;
     height: 2rem;
 }
-.content{
+.root{
     width: 18rem;
   height: 18rem;
     position: absolute;
@@ -68,7 +68,7 @@
     transition: 0.6s;
     text-align: center;
 }
-.content:hover{
+.root:hover{
     opacity: 1;
     
 }
