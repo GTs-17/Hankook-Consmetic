@@ -5,11 +5,19 @@
   padding: 0px;
   margin: 0px;
 }
-
 body {
   width: 100%;
 }
-
+.head_card{
+  font-size: 20px;
+}
+.head_card a{
+  margin-right: 2rem;
+  color: #000000;
+}
+.head_card a:hover{
+  color:#ff6600;
+}
 header {
   width: 100%;
   background-color: var(--header_background);
@@ -59,6 +67,10 @@ header {
 .logo img {
   width: 3rem;
   height: auto;
+  border-radius: 100%;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .margin-top1{
@@ -78,7 +90,7 @@ header {
 }
 
 footer{
-  background: #F4ECE9;
+  background:  #FFE7E7;
   flex-flow: row wrap;
   flex-direction: column;
 }
@@ -148,7 +160,9 @@ footer{
   margin: 0;
   border-top: 0.2px solid var(--line-color);
 }
-
+.social-links a{
+  font-size: 15px;
+}
 @media only screen and (max-width: 768px) {
   .footer_top_section {
     padding-left: 20%;

@@ -32,8 +32,9 @@ section{
     display: flex;
 }
 .h1{
-    padding: 30px;
-    font-size: 70px;
+    padding-top: 60px;
+    font-size: 40px;
+    padding-bottom: 30px;
 }
 main{
     margin-bottom: 100px;
