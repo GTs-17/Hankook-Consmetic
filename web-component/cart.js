@@ -121,16 +121,11 @@ function delElement(a){
 }
 
 function delElement(index) {
-  // Assuming cart_items is a global variable
   if (index >= 0 && index < Object.keys(cart_items).length) {
-      // Get the keys of the cart_items
       var keys = Object.keys(cart_items);
 
-      // Remove the item at the specified index
       var removedItemKey = keys[index];
       delete cart_items[removedItemKey];
-
-      // Update the display after removing the item
       display_cart();
   }
 }
