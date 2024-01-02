@@ -105,29 +105,21 @@ const btns=[
         {
             var {image, title, price} = item;
             return(
-                `<div class='box'>
-                <h3>${title}</h3>
-                <div class='img-box'>
-                <img class='images' src=${image}></img>
-                </div>
-                <div class='bottom'>
-                <h2>$ ${price}.00</h2>
-                <button>Add to cart</button>
-                </div>
-                </div>`)
+                
+                `  <section class = "product_page Products">
+                    <article class="uruuliin_budag">
+                    <a href="#">
+                        <picture>
+                            <img src=${image}>
+                        </picture>
+                    </a>
+                    <article class="uruuliin_budag dood">
+                        <h3>Тод ягаан </h3>
+                        <p>Тод ягаан өнгөтэй урууланд гүний чийгшил өгнө</p>
+                        <a>${price} ₮</a>
+                        
+                    </article>
+                    </section>`)
         }).join('');
     }
     displayItem(categories);
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     const turulDropdown = document.querySelector('.turul');
-    //     const products = document.querySelectorAll('.product_page article');
-
-    //     turulDropdown.addEventListener('change', function () {
-    //         const selectedCategory = turulDropdown.value;
-
-    //         products.forEach(function (product) {
-    //             const category = product.classList.contains(selectedCategory) || selectedCategory === 'none';
-    //             product.style.display = category ? 'block' : 'non e';
-    //         });
-    //     });
-    // });
