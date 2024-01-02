@@ -1,6 +1,5 @@
 @import url("root.css");
 
-
 .Information{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,7 +33,7 @@
 .Products > article{
   display: flex;
   flex-direction: column;
-  background-color:var(--white_color);
+  background-color:var(--header_background);
   border-radius: 0.625rem;
 }
 
@@ -132,7 +131,22 @@ right: 0;
   height: auto; /* Maintain the aspect ratio */
 }
 
-
+.news{
+  margin: 10px;
+  width: 250px;
+  height: 300px;
+  background-color: #FFE7E7;
+  box-sizing: border-box;
+  border: 1px solid #FFE7E7;
+}
+.news img{
+  width: 100%;
+  height: 200px;
+}
+.news p{
+  font-size: 70%;
+  padding-left: 10px;
+}
 
 @media only screen and (max-width: 768px) {
   .product_page {
