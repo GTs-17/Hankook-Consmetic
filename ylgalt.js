@@ -101,7 +101,7 @@ const btns=[
     
     
     const displayItem = (items) => {
-        document.getElementById('root').innerHTML = items.map((item)=>
+        document.getElementById('content').innerHTML = items.map((item)=>
         {
             var {image, title, price} = item;
             return(
