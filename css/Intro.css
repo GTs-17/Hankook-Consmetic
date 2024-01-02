@@ -107,6 +107,29 @@
     padding: 0.5rem 0rem;
     margin-left:5rem ;
   }
+  .more-btn{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #FFB5B5;
+    float: right; 
+    margin-right: 12rem;
+    margin-top: 6rem;
+    box-sizing: border-box;
+    border: 2px solid #000;
+  }
+  .more-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
 
   
 
