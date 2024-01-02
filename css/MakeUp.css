@@ -44,6 +44,10 @@
     height: 2rem;
     
 }
+.turul:hover{
+	color: pink;
+	background-color: #aaa;
+}
 .tovch{
     margin-left: 5rem;
     background: white;
