@@ -2,29 +2,29 @@ const all_products = [
 
   {
       id: 1,
-      title: 'Гарчиг1',
+      title: 'Ampoule',
       disprice: 150000,
       price: 135000,
       img: "image/Sale/sale1.png", 
-      info: ' Nice Profdughdfghfdghkfdghkfdghf k hsrukdgfdjkhfhe h hhfgh '
+      info: ' Ногоон цайны хандтай арьсанд гүн чийгшил өгч гүний давхаргад нөлөөлнө'
   },
 
   {
       id: 2,
-      title: 'Гарчиг2',
+      title: 'Хөөсөн нүүр цэвэрлэгч',
       disprice: 45000,
       price: 36000,
       img: "image/Sale/sale2.png", 
-      info: ' йөй '
+      info: ' Ordinary   40мл '
   },
 
   {
       id: 3,
-      title: 'Гарчиг3',
+      title: 'Cepa Cica Ampoule',
       disprice: 45000,
       price: 36000,
       img: "image/Sale/sale3.png", 
-      info: ' dsfhyuidyuhgdfygyfdgiud'
+      info: ' Сорви арилгах эмчилгээний гол бүрэлдэхүүн хэсэг болох Allium Cepa (CEPA)'
   },
 
   {
@@ -159,7 +159,7 @@ function display_cart() {
           `
       }
       all_cart += `<center> <h1> Total Price ${ total_price } </h1> </center>
-      <button class="Paid-Btn" onclick= "" >Төлөх</button>`
+      <div><button class="Paid-Btn">Төлөх</button></div>`
       document.getElementById('cart').innerHTML = all_cart
 
 
@@ -170,19 +170,9 @@ function display_cart() {
   }
 }
 
-var burger = document.querySelector('.burger')
-var navBar = document.querySelector('.navbar')
-var navList = document.querySelector('.navlist')
 
 
-burger.addEventListener('click', () => {
 
-  navBar.classList.toggle('resp_navbar')
-  navList.classList.toggle('resp_navlist')
-
-})
-
-// code for showing cart section and hiding product section
 
 function show_cart() {
   document.getElementById('cart').style.display = 'block'
@@ -190,8 +180,3 @@ function show_cart() {
   display_cart();
 }
 
-function show_shop() {
-  document.getElementById('cart').style.display = 'none'
-  document.getElementById('shop_products').style.display = 'block'
-  document.getElementById('shop_products').style.display = 'flex'
-}
