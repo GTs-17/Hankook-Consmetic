@@ -273,6 +273,9 @@ right: 0;
   margin-left: 1px;
 }
 
+.item-center{
+  align-items: center;
+}
 
 .cart-title{
   height: 100%;
@@ -360,5 +363,16 @@ right: 0;
 .fa-shopping-cart #count {
     top: -5px;                  
     right: -5px;              
+}
+
+.i-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.i-center :hover{
+  color: red;
 }
 

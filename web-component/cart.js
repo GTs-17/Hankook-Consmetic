@@ -113,22 +113,6 @@ function updateCount() {
   document.getElementById("count").innerHTML = total_items; 
 }
 
-var cart =[];
-
-function delElement(a){
-  cart.splice(a, 1);
-  displaycart();
-}
-
-function delElement(index) {
-  if (index >= 0 && index < Object.keys(cart_items).length) {
-      var keys = Object.keys(cart_items);
-
-      var removedItemKey = keys[index];
-      delete cart_items[removedItemKey];
-      display_cart();
-  }
-}
 
 
 
@@ -138,37 +122,41 @@ function delElement(index) {
 
 
 function display_cart() {
-
   var all_cart = '';
-  let j = 0;
-
-
+  
   if (Object.keys(cart_items).length > 0) {
-
       for (k in cart_items) {
-          all_cart = all_cart + `
+          all_cart += `
               <section class="cart-items">
-              <h2 class="cart-title">${cart_items[k].title}</h2>
+                  <h2 class="cart-title">${cart_items[k].title}</h2>
                   <article class="cart-img">
                       <img src="${cart_items[k].img}" alt="No Image">
                   </article>
-
                   <h2 class="cart-price">${cart_items[k].quantity}</h2>
                   <h2 class="cart-price">${cart_items[k].cart_price}</h2>
+                  <article class="i-center"><i class="fa fa-trash-o" data-key="${k}" aria-hidden="true"></i></article>
               </section>
-          `
+          `;
       }
-      all_cart += `<center> <h1> Total Price ${ total_price } </h1> </center>
-      <div><button class="Paid-Btn">Төлөх</button></div>`
-      document.getElementById('cart').innerHTML = all_cart
+      all_cart += `<center> <h1> Total Price ${total_price} </h1> </center>
+                   <div><button class="Paid-Btn">Төлөх</button></div>`;
+      document.getElementById('cart').innerHTML = all_cart;
 
+      //Delete product
+      const trashIcons = document.querySelectorAll('.fa-trash-o');
+      trashIcons.forEach(icon => {
+          icon.addEventListener('click', function() {
+              const key = this.getAttribute('data-key');
+              delete cart_items[key];
+              display_cart();  // render
+          });
+      });
 
-  }
-
-  else {
-      document.getElementById('cart').innerHTML = '<center> <h1> Сагсанд бүтээгдэхүүн байхгүй </h1> </center> '
+  } else {
+      document.getElementById('cart').innerHTML = '<center> <h1> Сагсанд бүтээгдэхүүн байхгүй </h1> </center> ';
   }
 }
+
 
 
 
