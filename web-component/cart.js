@@ -73,7 +73,7 @@ function display_product() {
       `
 
   }
-  // End of for loop , injecting all cards into  shop_products section 
+  
   document.getElementById('shop_products').innerHTML = cards
 }
 
