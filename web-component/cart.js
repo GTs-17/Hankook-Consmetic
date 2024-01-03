@@ -148,6 +148,8 @@ function display_cart() {
           icon.addEventListener('click', function() {
               const key = this.getAttribute('data-key');
               delete cart_items[key];
+              total_items -= 1; 
+              updateCount();  
               display_cart();  // render
           });
       });
