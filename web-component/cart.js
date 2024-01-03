@@ -158,7 +158,8 @@ function display_cart() {
               </section>
           `
       }
-      all_cart += `<center> <h1> Total Price ${ total_price } </h1> </center>`
+      all_cart += `<center> <h1> Total Price ${ total_price } </h1> </center>
+      <button class="Paid-Btn" onclick= "" >Төлөх</button>`
       document.getElementById('cart').innerHTML = all_cart
 
 
