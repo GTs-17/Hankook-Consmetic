@@ -180,3 +180,8 @@ function show_cart() {
   display_cart();
 }
 
+function show_shop() {
+  document.getElementById('cart').style.display = 'none'
+  document.getElementById('shop_products').style.display = 'block'
+  document.getElementById('shop_products').style.display = 'flex'
+}
