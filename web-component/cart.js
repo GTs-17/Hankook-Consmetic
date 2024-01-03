@@ -2,29 +2,29 @@ const all_products = [
 
   {
       id: 1,
-      title: 'Гарчиг1',
+      title: 'Ampoule',
       disprice: 150000,
       price: 135000,
       img: "image/Sale/sale1.png", 
-      info: ' Nice Profdughdfghfdghkfdghkfdghf k hsrukdgfdjkhfhe h hhfgh '
+      info: ' Ногоон цайны хандтай арьсанд гүн чийгшил өгч гүний давхаргад нөлөөлнө'
   },
 
   {
       id: 2,
-      title: 'Гарчиг2',
+      title: 'Хөөсөн нүүр цэвэрлэгч',
       disprice: 45000,
       price: 36000,
       img: "image/Sale/sale2.png", 
-      info: ' йөй '
+      info: ' Ordinary   40мл '
   },
 
   {
       id: 3,
-      title: 'Гарчиг3',
+      title: 'Cepa Cica Ampoule',
       disprice: 45000,
       price: 36000,
       img: "image/Sale/sale3.png", 
-      info: ' dsfhyuidyuhgdfygyfdgiud'
+      info: ' Сорви арилгах эмчилгээний гол бүрэлдэхүүн хэсэг болох Allium Cepa (CEPA)'
   },
 
   {
@@ -73,7 +73,7 @@ function display_product() {
       `
 
   }
-  // End of for loop , injecting all cards into  shop_products section 
+  
   document.getElementById('shop_products').innerHTML = cards
 }
 
@@ -113,22 +113,6 @@ function updateCount() {
   document.getElementById("count").innerHTML = total_items; 
 }
 
-var cart =[];
-
-function delElement(a){
-  cart.splice(a, 1);
-  displaycart();
-}
-
-function delElement(index) {
-  if (index >= 0 && index < Object.keys(cart_items).length) {
-      var keys = Object.keys(cart_items);
-
-      var removedItemKey = keys[index];
-      delete cart_items[removedItemKey];
-      display_cart();
-  }
-}
 
 
 
@@ -138,50 +122,45 @@ function delElement(index) {
 
 
 function display_cart() {
-
   var all_cart = '';
-  let j = 0;
-
-
+  
   if (Object.keys(cart_items).length > 0) {
-
       for (k in cart_items) {
-          all_cart = all_cart + `
+          all_cart += `
               <section class="cart-items">
-              <h2 class="cart-title">${cart_items[k].title}</h2>
+                  <h2 class="cart-title">${cart_items[k].title}</h2>
                   <article class="cart-img">
                       <img src="${cart_items[k].img}" alt="No Image">
                   </article>
-
                   <h2 class="cart-price">${cart_items[k].quantity}</h2>
                   <h2 class="cart-price">${cart_items[k].cart_price}</h2>
+                  <article class="i-center"><i class="fa fa-trash-o" data-key="${k}" aria-hidden="true"></i></article>
               </section>
-          `
+          `;
       }
-      all_cart += `<center> <h1> Total Price ${ total_price } </h1> </center>`
-      document.getElementById('cart').innerHTML = all_cart
+      all_cart += `<center> <h1> Total Price ${total_price} </h1> </center>
+                   <div><button class="Paid-Btn">Төлөх</button></div>`;
+      document.getElementById('cart').innerHTML = all_cart;
 
+      //Delete product
+      const trashIcons = document.querySelectorAll('.fa-trash-o');
+      trashIcons.forEach(icon => {
+          icon.addEventListener('click', function() {
+              const key = this.getAttribute('data-key');
+              delete cart_items[key];
+              display_cart();  // render
+          });
+      });
 
-  }
-
-  else {
-      document.getElementById('cart').innerHTML = '<center> <h1> Сагсанд бүтээгдэхүүн байхгүй </h1> </center> '
+  } else {
+      document.getElementById('cart').innerHTML = '<center> <h1> Сагсанд бүтээгдэхүүн байхгүй </h1> </center> ';
   }
 }
 
-var burger = document.querySelector('.burger')
-var navBar = document.querySelector('.navbar')
-var navList = document.querySelector('.navlist')
 
 
-burger.addEventListener('click', () => {
 
-  navBar.classList.toggle('resp_navbar')
-  navList.classList.toggle('resp_navlist')
 
-})
-
-// code for showing cart section and hiding product section
 
 function show_cart() {
   document.getElementById('cart').style.display = 'block'
