@@ -28,56 +28,56 @@ const btns=[
     const product = [
     {
         id: 1,
-        image: 'image/makeup/m10.JPG',
+        image: 'image/skin_care/sk4.JPG',
         title: 'Бүдэг ягаан ',
         price: 23000,
         category: 'Хуурай арьс'
     },
     {
         id: 1,
-        image: 'image/makeup/m3.JPG',
+        image: 'image/skin_care/sk3.JPG',
         title: 'Бүдэг ягаан өнгө',
         price: 22000,
         category: 'Тослог арьс'
     },
     {
         id: 3,
-        image: 'image/makeup/m4.JPG',
+        image: 'image/skin_care/sk5.JPG',
         title: 'Гүн улаан өнгө',
         price: 23000,
         category: 'Холимог'
     },
     {
         id: 1,
-        image: 'image/makeup/m6.JPG',
+        image: 'image/skin_care/sk7.JPG',
         title: 'Бүдэг улаан',
         price: 23000,
         category: 'Холимог'
     },
     {
         id: 2,
-        image: 'image/makeup/m5.JPG',
+        image: 'image/skin_care/sk6.JPG',
         title: 'Ягаан',
         price: 23000,
         category: 'Тослог арьс'
     },
     {
         id: 3,
-        image: 'image/makeup/m7.JPG',
+        image: 'image/skin_care/sk2.JPG',
         title: 'Тод улаан',
         price: 23000,
         category: 'Холимог'
     },
     {
         id: 2,
-        image: 'image/makeup/m8.JPG',
+        image: 'image/skin_care/sk1.JPG',
         title: 'Гялалзсан ягаан',
         price: 22000,
         category: 'Хуурай арьс'
     },
     {
         id: 1,
-        image: 'image/makeup/m9.JPG',
+        image: 'image/skin_care/sk2.JPGG',
         title: 'Улаан ягаан',
         price: 25000,
         category:'Холимог'
@@ -101,33 +101,25 @@ const btns=[
     
     
     const displayItem = (items) => {
-        document.getElementById('root').innerHTML = items.map((item)=>
+        document.getElementById('content').innerHTML = items.map((item)=>
         {
             var {image, title, price} = item;
             return(
-                `<div class='box'>
-                <h3>${title}</h3>
-                <div class='img-box'>
-                <img class='images' src=${image}></img>
-                </div>
-                <div class='bottom'>
-                <h2>$ ${price}.00</h2>
-                <button>Add to cart</button>
-                </div>
-                </div>`)
+                
+                `  <section class = "product_page Products">
+                    <article class="uruuliin_budag">
+                    <a href="#">
+                        <picture>
+                            <img src=${image}>
+                        </picture>
+                    </a>
+                    <article class="uruuliin_budag dood">
+                        <h3>Тод ягаан </h3>
+                        <p>Тод ягаан өнгөтэй урууланд гүний чийгшил өгнө</p>
+                        <a>${price} ₮</a>
+                        
+                    </article>
+                    </section>`)
         }).join('');
     }
     displayItem(categories);
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     const turulDropdown = document.querySelector('.turul');
-    //     const products = document.querySelectorAll('.product_page article');
-
-    //     turulDropdown.addEventListener('change', function () {
-    //         const selectedCategory = turulDropdown.value;
-
-    //         products.forEach(function (product) {
-    //             const category = product.classList.contains(selectedCategory) || selectedCategory === 'none';
-    //             product.style.display = category ? 'block' : 'non e';
-    //         });
-    //     });
-    // });
