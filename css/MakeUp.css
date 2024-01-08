@@ -4,55 +4,66 @@
     margin: 0;
     padding: 0;
 }
-.Shuuderee img{
+.pro1 img{
     width: 25rem;
     height: 22rem;
     margin-right: auto;
     border-radius: 1rem;
-    margin-left: 4rem;
-    margin-top: 2rem ;
+    margin-left: 2rem;
+    margin-top: 6rem ;
 }
-.makeupnuur img{
+.pro2 img{
     width: 20rem;
     height: 17rem;
     border-radius: 1rem;
-    margin-top: 6rem;
-    margin-right: 6rem;
+    margin-top: 11rem;
+    margin-right: 2rem;
 }
-.Exam-ti{
+.ehen{
+    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
-   display: flex;
+   
 }
-.mm {
-   margin-top: 5rem;
+.mm{
+   margin-top: 12rem;
    font-family: 'Julius Sans One';
-   color: aqua;
-  
+   font-size: 1.5rem;
+}
+hr{
+    width: 200%;
 }
 .pp{
-    margin-left: 3rem;
-    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-family: 'Julius Sans One';
+    font-size: 1.5rem;
+}
+.gg{
+    margin-top: 7rem;
+    margin-left: 10rem;
 }
 .turul{
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
     background: white;
     border-radius: 0.5rem; 
-    width: 12rem;
+    border-width: 0.1rem;
+    width: 8rem;
     height: 2rem;
     
 }
 .turul:hover{
 	color: pink;
-	background-color: #aaa;
+	background-color: white;
 }
 .uruuliin_budag{
     float: left;
     width: 25%;
     margin-top: 20px;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 1rem;
 }
 
@@ -104,8 +115,23 @@
     letter-spacing: 0;
     line-height: normal;
     padding-left: 14rem;
+
 }
+/* үүнээс доош оруулсан код 2 тал руу аль аль нь руу нь гарахыг хориглоно */
 .clr{
     clear: both;
+}
+.tsaash button{
+    margin: 2rem 2rem 2rem 40rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
 }
   
