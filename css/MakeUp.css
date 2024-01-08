@@ -1,5 +1,9 @@
 
-
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
 .Shuuderee img{
     width: 25rem;
     height: 22rem;
@@ -31,10 +35,6 @@
     margin-left: 3rem;
     font-family: 'Julius Sans One', sans-serif;
 }
-.a{
-    margin-left: 5rem;
-    margin-top:10rem ;
-}
 .turul{
     margin-top: 2rem;
     margin-left: 1rem;
@@ -48,30 +48,64 @@
 	color: pink;
 	background-color: #aaa;
 }
-.tovch{
-    margin-left: 5rem;
-    background: white;
-    border-radius: 0.5rem; 
-    width: 5rem;
-    height: 2rem;
+.uruuliin_budag{
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-.content{
-    width: 18rem;
-  height: 18rem;
-    position: absolute;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-    text-align: center;
+
+.uruuliin_budag img{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-bottom: red 4px solid;
 }
-.content:hover{
-    opacity: 1;
+.uruuliin_budag_dood{
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    background: #FFE7E7;
     
 }
-.uruuliin_budag:hover .content {
-    opacity: 1;
+.uruuliin_budag_dood h3{
+    color: #000;
+    font-family: Jost;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+    padding-left: 1rem;
+    padding-right: 8px;
+    margin-bottom: 0;
+    
 }
+.uruuliin_budag_dood p{
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Jost;
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    width: 185px;
+    height: 25px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+.uruuliin_budag_dood a{
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 14rem;
+}
+.clr{
+    clear: both;
+}
+  
