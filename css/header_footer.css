@@ -14,9 +14,10 @@ body {
 .head_card a{
   margin-right: 2rem;
   color: #000000;
+  
 }
 .head_card a:hover{
-  color:#ff6600;
+  text-decoration: underline;
 }
 header {
   width: 100%;
@@ -57,7 +58,8 @@ header {
 }
 
 .head_menu a:hover {
-    color: #ff6600; 
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .head_card a{
@@ -100,13 +102,11 @@ footer{
   margin: 0 15px;
 }
 
-.footer-col h4{
-	font-size: 18px;
-	color: #000000;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col_input_text a{
+  paddin:center;
+	color: #000;
+  font-family: Inter;
+  font-size: 20px;
 }
 
 .footer-col ul li:not(:last-child){
@@ -132,6 +132,7 @@ footer{
 
 .footer_logo{
   position: relative;
+  margin-left: 2rem;
 }
 
 .footer_logo > picture {
@@ -146,6 +147,11 @@ footer{
   padding: 0.5em 8em 0.5em 8em;
 }
 
+.button{
+  border-radius: 10px;
+border: 1px solid #000;
+background: #F0F0F0;
+}
 
 
 .input_text {
