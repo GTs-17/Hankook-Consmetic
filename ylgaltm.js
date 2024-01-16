@@ -14,10 +14,11 @@ const btns=[
         name: 'Холимог'
     },
     ]
-    
+    // 
     const filters = [...new Set(btns.map((btn)=>
         {return btn}))]
     
+        //button уудыг дэлгэцэнд харуулах
     document.getElementById('btns').innerHTML=filters.map((btn)=>{
         var {name, id} = btn;
         return(
@@ -26,16 +27,17 @@ const btns=[
     }).join('');
     
     const product = [
+        // бүтээгдэхүүнүүдийн бусад мэдээлэл
     {
         id: 1,
-        image: 'image/makeup/m10.JPG',
+        image: 'image/makeup/m3.JPG',
         title: 'Бүдэг ягаан ',
         price: 23000,
         category: 'Хуурай арьс'
     },
     {
         id: 1,
-        image: 'image/makeup/m3.JPG',
+        image: 'image/makeup/m10.JPG',
         title: 'Бүдэг ягаан өнгө',
         price: 22000,
         category: 'Тослог арьс'
@@ -84,9 +86,11 @@ const btns=[
     },
     ];
     
+    //бүтээгдэхүүнийг хадгал авах
     const categories = [...new Set(product.map((item)=>
         {return item}))]
     
+        //шүүлт хийх функц бэлдэх 
     const filterItems = (a)=>{
         const flterCategories = categories.filter(item);
         function item(value){
@@ -96,11 +100,14 @@ const btns=[
                     )
             }
         }
+        //шүүсэн мэдээллээ харуулах
         displayItem(flterCategories)
     }
     
     
     const displayItem = (items) => {
+
+        //// 'content' ID-тай HTML элементийг авах
         document.getElementById('content').innerHTML = items.map((item)=>
         {
             var {image, title, price} = item;
@@ -113,13 +120,16 @@ const btns=[
                             <img src=${image}>
                         </picture>
                     </a>
-                    <article class="uruuliin_budag dood">
+                    <article class="uruuliin_budag_dood">
                         <h3>Тод ягаан </h3>
                         <p>Тод ягаан өнгөтэй урууланд гүний чийгшил өгнө</p>
                         <a>${price} ₮</a>
-                        
+                    </article>
                     </article>
                     </section>`)
         }).join('');
     }
+    
+
+    //Эхлээд бүтээгдэхүүнүүдийг дэлгэц дээр харуулах
     displayItem(categories);

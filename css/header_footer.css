@@ -4,6 +4,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100%;
+}
+.head_card{
+  font-size: 20px;
+}
+.head_card a{
+  margin-right: 2rem;
+  color: #000000;
+  
+}
+.head_card a:hover{
+  text-decoration: underline;
+}
+header {
+  width: 100%;
+  background-color: var(--header_background);
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  z-index: 9999;
+  justify-content: space-between;
 }
 
 body{
@@ -16,6 +41,36 @@ body{
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.head_menu ul 
+  {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+.head_menu ul > li 
+  {
+    margin: 0 1rem 0 0;
+    list-style: none;
+  }
+
+.head_menu ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: var(--header_footer_font_family);
+  color: var(--header_font_color);
+}
+
+.head_menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.head_card a{
   position: relative;
   background-color: #FFE7E7;
   padding: 12px 20px;
@@ -148,13 +203,11 @@ footer{
   margin: 0 15px;
 }
 
-.footer-col h4{
-	font-size: 18px;
-	color: #000000;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col_input_text a{
+  paddin:center;
+	color: #000;
+  font-family: Inter;
+  font-size: 20px;
 }
 
 .footer-col ul li:not(:last-child){
@@ -180,6 +233,7 @@ footer{
 
 .footer_logo{
   position: relative;
+  margin-left: 2rem;
 }
 
 .footer_logo > picture {
@@ -194,6 +248,11 @@ footer{
   padding: 0.5em 8em 0.5em 8em;
 }
 
+.button{
+  border-radius: 10px;
+border: 1px solid #000;
+background: #F0F0F0;
+}
 
 
 .input_text {
