@@ -4,25 +4,34 @@ class header extends HTMLElement {
     }
     connectedCallback() {
             this.parentNode.innerHTML = `
-            <nav class="head_menu">
-            <a href="nuur.html">
-                <picture class="logo margin-left1 margin-top1">
-                    <img src="image/introduction/MenuLogo.jpg" alt="MenuLogo" width="100px" height="94px">
-                </picture>
-            </a>  
-                <ul>
-                    <li><a href="Home.html">Hankook</a></li>
+            <header>
+            <nav>
+            <ul class='nav-bar'>
+                <li class='logo'>
+                    <a href='nuur.html'>
+                        <img src='./image/introduction/MenuLogo.jpg' alt="MenuLogo"/>
+                    </a>
+                </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="nuur.html">Hankook</a></li>
                     <li><a href="Skin_care.html">Арьс арчилгаа</a></li>
                     <li><a href="MakeUp.html">MakeUp</a></li>
                     <li><a href="sale.html" onclick="show_shop()">Хямдрал</a></li>
-                </ul> 
-            </nav>
-            <section class="head_card margin-top margin-right1">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-            <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-            <a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-            </section>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                
+                <section class="header-card" >
+                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li><a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                </section>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        
+            </ul>
+        </nav>
+    </header>
             `;
     }
 }
