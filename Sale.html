@@ -12,7 +12,32 @@
 </head>
 <body>
     <header>
-        <top-header></top-header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'>
+                    <a href='nuur.html'>
+                        <img src='./image/introduction/MenuLogo.jpg' alt="MenuLogo"/>
+                    </a>
+                </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="nuur.html">Hankook</a></li>
+                    <li><a href="Skin_care.html">Арьс арчилгаа</a></li>
+                    <li><a href="MakeUp.html">MakeUp</a></li>
+                    <li><a href="sale.html" onclick="show_shop()">Хямдрал</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                
+                <section class="header-card" >
+                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li><a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li><a ><i class="fa fa-shopping-basket" onclick="show_cart()"><p id="count">0</p></i></a></li>
+                </section>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="Sale-Top">

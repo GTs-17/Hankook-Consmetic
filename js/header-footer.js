@@ -4,7 +4,6 @@ class header extends HTMLElement {
     }
     connectedCallback() {
             this.parentNode.innerHTML = `
-            <header>
             <nav>
             <ul class='nav-bar'>
                 <li class='logo'>
@@ -25,13 +24,12 @@ class header extends HTMLElement {
                     <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                     <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                     <li><a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true "></i></a></li>
                 </section>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         
             </ul>
         </nav>
-    </header>
             `;
     }
 }

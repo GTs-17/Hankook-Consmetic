@@ -4,8 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding: 0px;
-  margin: 0px;
+
 }
 body {
   width: 100%;
@@ -16,11 +15,9 @@ body {
 .head_card a{
   margin-right: 2rem;
   color: #000000;
-  
 }
-.head_card a:hover{
-  text-decoration: underline;
-}
+
+
 header {
   width: 100%;
   background-color: var(--header_background);
@@ -70,11 +67,7 @@ body{
     font-weight: bold;
 }
 
-.head_card a{
-  position: relative;
-  background-color: #FFE7E7;
-  padding: 12px 20px;
-}
+
 
 .logo img{
   width: 40px;
@@ -134,12 +127,13 @@ body{
 
 .header-card li {
   padding: 0 10px; 
+  margin-right: 2px;
 }
 
 .header-card a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   text-decoration: none;
   color: var(--color1);
   transition: 0.15s ease-in-out;
@@ -150,7 +144,7 @@ body{
 }
 
 .header-card i {
-  font-size: 1rem; 
+  font-size: 20px; 
 }
 
 

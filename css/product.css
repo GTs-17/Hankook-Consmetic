@@ -342,28 +342,31 @@ right: 0;
 
 
 #count {
-    background-color: red;      
-    color: white;               
-    width: 20px;                 
-    height: 20px;               
-    border-radius: 50%;          
-    display: flex;               
-    justify-content: center;     
-    align-items: center;         
-    position: absolute;          
-    font-size: 12px;             
-    font-weight: bold;          
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    top: -5px;
+    right: -5px;
 }
 
-
-.fa-shopping-cart {
-    position: relative;         
+.fa-shopping-basket {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.fa-shopping-cart #count {
-    top: -5px;                  
-    right: -5px;              
+.fa-shopping-basket #count {
+    position: absolute;
 }
+
 
 .i-center{
   display: flex;
