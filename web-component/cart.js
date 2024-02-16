@@ -49,7 +49,7 @@ const all_products = [
 ]
 
 
-//Json-г уншиж бүтээгдэхүүнийг тодорхой форматаар харуулах
+//object-д хадгалсан Json-г уншиж бүтээгдэхүүнийг тодорхой форматаар харуулах
 
 function display_product() {
 
@@ -87,13 +87,13 @@ var cart_items = {};
 var total_price = 0;
 var total_items = 0;
 
+//Сагсанд хийх үед ямар элемент орж байгааг id-р таних хэсэг
 function addcart(item_id) {
   if (cart_items[item_id]) {
     cart_items[item_id].quantity += 1;
     cart_items[item_id].cart_price += cart_items[item_id].price;
     total_items += 1; 
     total_price += cart_items[item_id].price;
-    console.log(cart_items);
     updateCount(); 
     return;
   }
