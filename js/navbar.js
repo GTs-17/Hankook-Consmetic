@@ -1,32 +1,43 @@
-async function main() {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    const url = 'https://api.jsonbin.io/v3/b/656d72bb0574da7622cfe94a';
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-Master-Key': '$2a$10$T/MS.KH5mNM0PlItEPpBA.LMpTCt7XfP9JfFuIiaXEN2GAqDzhj5e'
+function display_cart() {
+    var all_cart = '';
+    
+    if (Object.keys(cart_items).length > 0) {
+        for (k in cart_items) {
+            all_cart += `
+                <section class="cart-items">
+                    <h2 class="cart-title">${cart_items[k].title}</h2>
+                    <article class="cart-img">
+                        <img src="${cart_items[k].img}" alt="No Image">
+                    </article>
+                    <h2 class="cart-price">${cart_items[k].quantity}</h2>
+                    <h2 class="cart-price">${cart_items[k].cart_price}</h2>
+                    <article class="i-center"><i class="fa fa-trash-o" data-key="${k}" aria-hidden="true"></i></article>
+                </section>
+            `;
         }
-    };
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        const category = urlParams.get('category');
-        const filteredMovies = result.record.filter(movie => movie["torol"].includes(category));
-        const elem = document.getElementById("movies");
-        elem.innerHTML = filteredMovies.map((movie) => {
-            return `<article> 
-                <a href="${movie.link}"><img src="${movie.poster}" alt="Oppenheimer movie poster"><h3>${movie.title}</h3></a>
-                <div class="group"> <img class="cal" src="image/calendar.png" alt="calendar icon"> 
-                <a class="more" href="${movie.link}" aria-label="Learn more about Oppenheimer"> Дэлгэрэнгүй</a>
-                <h4>${movie.garahhugatsaa}</h4>
-                <p>Төрөл: ${movie.torol} - Үргэжлэх хугацаа: ${movie.urgeljlehhugatsaa}</p></div>
-            </article>`;
-        }).join("");
-        
-    } catch (error) {
-        console.error(error);
+        all_cart += `<center> <h1> Total Price ${total_price} </h1> </center>
+                     <div><button class="Paid-Btn" onclick="pay()">Төлөх</button></div>`; // Энэ мөрөөс хойш товчлуурыг нэмнэ
+        document.getElementById('cart').innerHTML = all_cart;
+  
+        //Delete product
+        const trashIcons = document.querySelectorAll('.fa-trash-o');
+        trashIcons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                const key = this.getAttribute('data-key');
+                delete cart_items[key];
+                total_items -= 1; 
+                updateCount();  
+                display_cart();  // render
+            });
+        });
+  
+    } else {
+        document.getElementById('cart').innerHTML = '<center> <h1> Сагсанд бүтээгдэхүүн байхгүй </h1> </center> ';
     }
-}
-
-window.onload = main;
+  }
+  
+  function pay() {
+      // Энд төлбөр төлөх үйлдэл хийх логик орж ирнэ.
+      alert('Төлбөр амжилттай хийгдлээ!');
+  }
+  

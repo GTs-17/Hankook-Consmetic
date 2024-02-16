@@ -126,10 +126,13 @@ const btns=[
                         <a>${price} ₮</a>
                     </article>
                     </article>
-                    </section>`)
+                    </section>`)    
         }).join('');
     }
     
+
+
+
 
     //Эхлээд бүтээгдэхүүнүүдийг дэлгэц дээр харуулах
     displayItem(categories);
