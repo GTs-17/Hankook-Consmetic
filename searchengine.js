@@ -1,3 +1,4 @@
+  //Бүтээгдэхүүний объектын массив
 const product = [
   {
     id: 1,
@@ -34,18 +35,121 @@ const product = [
     category: "makeup",
     image: "image/makeup/m6.jpg"
   }
+  ,
+  {
+    id: 1,
+    image: 'image/skin_care/sk9.JPG',
+    title: 'Бүдэг ягаан ',
+    price: 23000,
+    category: 'Хуурай арьс'
+},
+{
+    id: 1,
+    image: 'image/skin_care/sk10.JPG',
+    title: 'Бүдэг ягаан өнгө',
+    price: 22000,
+    category: 'Тослог арьс'
+},
+{
+    id: 3,
+    image: 'image/skin_care/sk3.JPG',
+    title: 'Гүн улаан өнгө',
+    price: 23000,
+    category: 'Холимог'
+},
+{
+    id: 1,
+    image: 'image/skin_care/sk4.JPG',
+    title: 'Бүдэг улаан',
+    price: 23000,
+    category: 'Холимог'
+},
+{
+    id: 2,
+    image: 'image/skin_care/sk5.JPG',
+    title: 'Ягаан',
+    price: 23000,
+    category: 'Тослог арьс'
+},
+{
+    id: 3,
+    image: 'image/skin_care/sk6.JPG',
+    title: 'Тод улаан',
+    price: 23000,
+    category: 'Холимог'
+},
+{
+    id: 2,
+    image: 'image/skin_care/sk7.JPG',
+    title: 'Гялалзсан ягаан',
+    price: 22000,
+    category: 'Хуурай арьс'
+},
+{
+    id: 1,
+    image: 'image/skin_care/sk8.JPG',
+    title: 'Улаан ягаан',
+    price: 25000,
+    category:'Холимог'
+},
+{
+  id: 1,
+  image: 'image/makeup/m3.JPG',
+  title: 'Бүдэг ягаан ',
+  price: 23000,
+  category: 'Хуурай арьс'
+},
+{
+  id: 1,
+  image: 'image/makeup/m10.JPG',
+  title: 'Бүдэг ягаан өнгө',
+  price: 22000,
+  category: 'Тослог арьс'
+},
+{
+  id: 3,
+  image: 'image/makeup/m4.JPG',
+  title: 'Гүн улаан өнгө',
+  price: 23000,
+  category: 'Холимог'
+},
+{
+  id: 1,
+  image: 'image/makeup/m6.JPG',
+  title: 'Бүдэг улаан',
+  price: 23000,
+  category: 'Холимог'
+},
+{
+  id: 2,
+  image: 'image/makeup/m5.JPG',
+  title: 'Ягаан',
+  price: 23000,
+  category: 'Тослог арьс'
+},
+{
+  id: 3,
+  image: 'image/makeup/m7.JPG',
+  title: 'Тод улаан',
+  price: 23000,
+  category: 'Холимог'
+},
+{
+  id: 2,
+  image: 'image/makeup/m8.JPG',
+  title: 'Гялалзсан ягаан',
+  price: 22000,
+  category: 'Хуурай арьс'
+},
+{
+  id: 1,
+  image: 'image/makeup/m9.JPG',
+  title: 'Улаан ягаан',
+  price: 25000,
+  category:'Холимог'
+},
+  
 ];
-
-const categories = [...new Set(product.map((item) => item.category))];
-
-document.getElementById('searchBar').addEventListener('keyup', (e) => {
-  const searchData = e.target.value.toLowerCase();
-  const filterData = product.filter((item) =>
-    item.title.toLowerCase().includes(searchData)
-  );
-  displayItem(filterData);
-});
-
 const displayItem = (items) => {
   document.getElementById('root').innerHTML = items
     .map((item) => {
@@ -65,8 +169,19 @@ const displayItem = (items) => {
     })
     .join('');
 };
-
 displayItem(product);
+
+// бүтээгдэхүүнийг хайх хэсэг
+// product массивын item-нууд map функц ажиллаад category гаргаж авна. 
+const categories = [...new Set(product.map((item) => item.category))];
+
+document.getElementById('searchBar').addEventListener('keyup', (e) => {
+  const searchData = e.target.value.toLowerCase();
+  const filterData = product.filter((item) =>
+    item.title.toLowerCase().includes(searchData)
+  );
+  displayItem(filterData);
+});
 
 const btns = [
   { id: 1, name: 'Skin Care' },

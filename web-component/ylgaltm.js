@@ -1,6 +1,6 @@
 
 
-const btns=[ //товчлууруудын массивыг тодорхойлж өгсөн байгаа бөгөөд тус бүр нь  нэр болон id тай байна.
+const btns=[ 
     {
         id: 1,
         name: 'Хуурай арьс'
@@ -18,6 +18,7 @@ const btns=[ //товчлууруудын массивыг тодорхойлж 
     // set болон ... ашиглан дээрх товчлууруудын массив дээр үндэслэн товчлууруудын set үүсгэж б
     const filters = [...new Set(btns.map((btn)=>
         {return btn}))]
+
         //button уудыг дэлгэцэнд харуулах
     document.getElementById('btns').innerHTML=filters.map((btn)=>{
         var {name, id} = btn;

@@ -188,6 +188,7 @@ body{
 
 footer{
   background:  #FFE7E7;
+  margin-top: 2rem;
   flex-flow: row wrap;
   flex-direction: column;
 }
