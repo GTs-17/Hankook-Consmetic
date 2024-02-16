@@ -120,7 +120,7 @@ function updateCount() {
 function display_cart() {
   var all_cart = '';
   
-  //Сагсанд бүтээгдэхүүн орсон үед ажиллах хэсэг
+  //Сагсанд бүтээгдэхүүн байгааг аруулна
   if (Object.keys(cart_items).length > 0) {
       for (k in cart_items) {
           all_cart += `
@@ -139,13 +139,14 @@ function display_cart() {
                   <div><button class="to-pay-btn" onclick="pay()">Төлөх</button></div>`; // Энэ мөрөөс хойш товчлуурыг нэмнэ
       document.getElementById('cart').innerHTML = all_cart;
 
-      //Delete product
+      //Бүтээгдэхүүн устгах
       const trashIcons = document.querySelectorAll('.fa-trash-o');
       trashIcons.forEach(icon => {
           icon.addEventListener('click', function() {
               const key = this.getAttribute('data-key');
               delete cart_items[key];
               total_items -= 1; 
+              // total_price -= cart_items[k].cart_price;
               updateCount();  
               display_cart();  // render
           });
