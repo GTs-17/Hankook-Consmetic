@@ -54,4 +54,21 @@ body {
   
 }
 
+.to-pay-btn {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    touch-action: manipulation;
+    background-image: none;
+    background-color: red;
+    white-space: nowrap;
+    padding: 9px 12px;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+
 

@@ -49,7 +49,7 @@ const all_products = [
 ]
 
 
-
+//Json-г уншиж бүтээгдэхүүнийг тодорхой форматаар харуулах
 
 function display_product() {
 
@@ -69,11 +69,13 @@ function display_product() {
               <s class="sale-price">Price - ${item.disprice}</s>
               <h2 class="card-price">Price - ${item.price}</h2>
               <button class="card-btn" onclick= "addcart( ${item.id} ) " >Add To Cart</button>
-              </section> 
+              </section>
       `
+      
 
   }
   
+  //html-д оруулна
   document.getElementById('shop_products').innerHTML = cards
 }
 
@@ -114,16 +116,11 @@ function updateCount() {
 }
 
 
-
-
-
-
-
-
-
+//Сагсанд хэрхэн орохыг загварчлав
 function display_cart() {
   var all_cart = '';
   
+  //Сагсанд бүтээгдэхүүн орсон үед ажиллах хэсэг
   if (Object.keys(cart_items).length > 0) {
       for (k in cart_items) {
           all_cart += `
@@ -139,7 +136,7 @@ function display_cart() {
           `;
       }
       all_cart += `<center> <h1> Total Price ${total_price} </h1> </center>
-                   <div><button class="Paid-Btn">Төлөх</button></div>`;
+                  <div><button class="to-pay-btn" onclick="pay()">Төлөх</button></div>`; // Энэ мөрөөс хойш товчлуурыг нэмнэ
       document.getElementById('cart').innerHTML = all_cart;
 
       //Delete product
@@ -160,8 +157,10 @@ function display_cart() {
 }
 
 
-
-
+//Төлөх товч дарах үед хийгдэх ажиллагаа
+function pay() {
+  alert('Төлбөр амжилттай хийгдлээ!');
+}
 
 
 function show_cart() {
@@ -175,3 +174,14 @@ function show_shop() {
   document.getElementById('shop_products').style.display = 'block'
   document.getElementById('shop_products').style.display = 'flex'
 }
+
+
+
+
+
+
+
+
+
+
+
