@@ -1,6 +1,6 @@
 
 
-const btns=[
+const btns=[ //товчлууруудын массивыг тодорхойлж өгсөн байгаа бөгөөд тус бүр нь  нэр болон id тай байна.
     {
         id: 1,
         name: 'Хуурай арьс'
@@ -14,10 +14,10 @@ const btns=[
         name: 'Холимог'
     },
     ]
-    // 
+
+    // set болон ... ашиглан дээрх товчлууруудын массив дээр үндэслэн товчлууруудын set үүсгэж б
     const filters = [...new Set(btns.map((btn)=>
         {return btn}))]
-    
         //button уудыг дэлгэцэнд харуулах
     document.getElementById('btns').innerHTML=filters.map((btn)=>{
         var {name, id} = btn;
@@ -86,7 +86,7 @@ const btns=[
     },
     ];
     
-    //бүтээгдэхүүнийг хадгал авах
+    //бүтээгдэхүүнийг хадгалж авах
     const categories = [...new Set(product.map((item)=>
         {return item}))]
     
@@ -124,7 +124,7 @@ const btns=[
                         <h3>Тод ягаан </h3>
                         <p>Тод ягаан өнгөтэй урууланд гүний чийгшил өгнө</p>
                         <a>${price} ₮</a>
-                    </article>
+                    </arsicle>
                     </article>
                     </section>`)
         }).join('');
