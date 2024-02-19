@@ -150,6 +150,8 @@ const product = [
 },
   
 ];
+//бүтээгдэхүүнүүдийг  дэлгэцлэх
+
 const displayItem = (items) => {
   document.getElementById('root').innerHTML = items
     .map((item) => {
